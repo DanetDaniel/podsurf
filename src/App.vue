@@ -11,13 +11,26 @@ import TheFooter from './components/TheFooter.vue';
 
 export default {
   components: {
-    TheFooter
+    TheFooter,
   }
 }
 </script>
 
 <style>
+.bg-base {
+  background: var(--bg-base);
+}
+
+.bg-light-hover:hover {
+  background: var(--bg-light);
+}
+
+:root {
+  --bg-base: #242424;
+  --bg-light: #2f2f2f;
+}
+
 body {
-  background: #242424;
+  background: var(--bg-base);
 }
 </style>

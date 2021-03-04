@@ -1,22 +1,36 @@
 <template>
   <div>
-    <p class="text-2xl text-white">Categories</p>
+    <p class="text-2xl text-white mb-1">Categories</p>
     <ul class="flex overflow-x-scroll carousel">
-      <li class="carousel-item">Movies</li>
-      <li class="carousel-item">Education</li>
-      <li class="carousel-item">Gaming</li>
-      <li class="carousel-item">Tech</li>
-      <li class="carousel-item">Science</li>
-      <li class="carousel-item">Comedy</li>
-      <li class="carousel-item">News</li>
-      <li class="carousel-item">Politics</li>
+      <li
+        class="carousel-item"
+        v-for="category in categories"
+        :key="category"
+      >
+        {{ category }}
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'CategoryCarousel'
+  name: 'CategoryCarousel',
+  data() {
+    return {
+      categories: [
+        'Whatever',
+        'Movies',
+        'Education',
+        'Gaming',
+        'Tech',
+        'Science',
+        'Comedy',
+        'News',
+        'Politics'
+      ]
+    }
+  }
 }
 </script>
 
@@ -28,9 +42,20 @@ export default {
 
   .carousel::-webkit-scrollbar {
     width: 0;
+    height: 5px;
+    background: var(--bg-base);
+    @apply rounded-full;
+  }
+
+  .carousel::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  .carousel::-webkit-scrollbar-thumb {
+    @apply bg-gray-400 rounded-full;
   }
 
   .carousel-item {
-    @apply text-xl text-gray-400 mr-5 cursor-pointer hover:text-gray-200 duration-100
+    @apply text-xl text-gray-400 mr-3 mb-1 rounded-full cursor-pointer hover:text-gray-200 duration-100;
   }
 </style>
