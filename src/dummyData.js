@@ -1,0 +1,30 @@
+export default dummyData = {
+  "id": 75075,
+  "title": "Batman University",
+  "url": "https:\/\/feeds.theincomparable.com\/batmanuniversity",
+  "originalUrl": "https:\/\/feeds.theincomparable.com\/batmanuniversity",
+  "link": "https:\/\/www.theincomparable.com\/batmanuniversity\/",
+  "description": "Batman University is a seasonal podcast about you know who...",
+  "author": "Tony Sindelar",
+  "ownerName": "The Incomparable",
+  "image": "https:\/\/www.theincomparable.com\/imgs\/logos\/logo-batmanuniversity-3x.jpg",
+  "artwork": "https:\/\/www.theincomparable.com\/imgs\/logos\/logo-batmanuniversity-3x.jpg",
+  "lastUpdateTime": 1546399813,
+  "lastCrawlTime": 1599328949,
+  "lastParseTime": 1599012694,
+  "lastGoodHttpStatusTime": 1599328949,
+  "lastHttpStatus": 200,
+  "contentType": "application\/x-rss+xml",
+  "itunesId": 1441923632,
+  "generator": null,
+  "language" : "en-us",
+  "type": 0,
+  "dead": 0,
+  "crawlErrors": 0,
+  "parseErrors": 0,
+  "categories": {
+      "104": "TV",
+      "105": "Film",
+      "107": "Reviews"
+  }
+}
